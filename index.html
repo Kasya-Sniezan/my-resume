@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
-    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite">
@@ -95,7 +95,7 @@
 
     <main>
       <div class="container container--main-page">
-        <div class="row">
+        <div class="row row--main">
           <div class="main-page-text-wrap">
             <h1 class="heading heading--position">Katya Kunevich</h1>
             <h2 class="heading heading--position heading--grey">
@@ -120,7 +120,7 @@
             </div>
           </div>
           <div class="main-page-img-wrap">
-            <img src="/images/photo.jpg" alt="Katya's photo" class="image">
+            <img src="/images/photo.jpg" alt="Katya's photo">
           </div>
         </div>
       </div>
@@ -136,7 +136,8 @@
                   <use href="#html5" />
               </svg>
             </div>
-            <div class="img-star--wrap"><img src="./images/icons/rating-5-star.svg" alt=""></div>
+            <div class="svg-caption">HTML</div>
+            <div><img src="./images/icons/rating-5-star.svg" alt=""></div>
           </div>
           
           <div class="col-icons">
@@ -145,7 +146,8 @@
                 <use href="#css3" />
               </svg>
             </div>
-            <div class="img-star--wrap"><img src="./images/icons/rating-5-star.svg" alt=""></div>
+            <div class="svg-caption">CSS</div>
+            <div><img src="./images/icons/rating-5-star.svg" alt=""></div>
           </div>
           
           <div class="col-icons">
@@ -154,7 +156,8 @@
                 <use href="#sass" />
               </svg>
             </div>
-            <div class="img-star--wrap"><img src="./images/icons/rating-4-star.svg" alt=""></div>
+            <div class="svg-caption">SASS</div>
+            <div><img src="./images/icons/rating-4-star.svg" alt=""></div>
           </div>
           
           <div class="col-icons">
@@ -163,7 +166,8 @@
                 <use href="#git" />
               </svg>
             </div>
-            <div class="img-star--wrap"><img src="./images/icons/rating-3-star.svg" alt=""></div>
+            <div class="svg-caption">Git</div>
+            <div><img src="./images/icons/rating-3-star.svg" alt=""></div>
           </div>
           
           <div class="col-icons">
@@ -172,7 +176,8 @@
                 <use href="#javascript" />
               </svg>
             </div>
-            <div class="img-star--wrap"><img src="./images/icons/rating-3-star.svg" alt=""></div>
+            <div class="svg-caption">JavaScript</div>
+            <div><img src="./images/icons/rating-3-star.svg" alt=""></div>
           </div>
           
           <div class="col-icons">
@@ -181,7 +186,8 @@
                 <use href="#github" />
               </svg>
             </div>
-            <div class="img-star--wrap"><img src="./images/icons/rating-4-star.svg" alt=""></div>
+            <div class="svg-caption">GitHub</div>
+            <div><img src="./images/icons/rating-4-star.svg" alt=""></div>
           </div>
 
           <div class="spoiler-wrap">
@@ -191,29 +197,36 @@
                     <use href="#pug" />
                 </svg>
               </div>
-              <div class="img-star--wrap"><img src="./images/icons/rating-3-star.svg" alt=""></div>
+              <div class="svg-caption">Pug</div>
+              <div><img src="./images/icons/rating-3-star.svg" alt=""></div>
             </div>
+
             <div class="col-icons">
               <div class="svg--wrap">
                 <svg class="webpack">
                     <use href="#webpack" />
                 </svg>
               </div>
-              <div class="img-star--wrap"><img src="./images/icons/rating-4-star.svg" alt=""></div>
+              <div class="svg-caption">Webpack</div>
+              <div><img src="./images/icons/rating-4-star.svg" alt=""></div>
             </div>
+
             <div class="col-icons">
               <div class="svg--wrap">
                 <img src="./images/icons/node.svg" alt="">
               </div>
-              <div class="img-star--wrap"><img src="./images/icons/rating-3-star.svg" alt=""></div>
+              <div class="svg-caption">Node.js</div>
+              <div><img src="./images/icons/rating-3-star.svg" alt=""></div>
             </div>
+
             <div class="col-icons">
               <div class="svg--wrap">
                 <svg class="npm">
                     <use href="#npm" />
                 </svg>
               </div>
-              <div class="img-star--wrap"><img src="./images/icons/rating-3-star.svg" alt=""></div>
+              <div class="svg-caption">npm</div>
+              <div><img src="./images/icons/rating-3-star.svg" alt=""></div>
             </div>
             
             <div class="col-icons">
@@ -222,15 +235,18 @@
                     <use href="#react" />
                 </svg>
               </div>
-              <div class="img-star--wrap"><img src="./images/icons/rating-4-star.svg" alt=""></div>
+              <div class="svg-caption">React</div>
+              <div><img src="./images/icons/rating-4-star.svg" alt=""></div>
             </div>
+
             <div class="col-icons">
               <div class="svg--wrap">
                 <svg class="figma">
                     <use href="#figma" />
                 </svg>
               </div>
-              <div class="img-star--wrap"><img src="./images/icons/rating-3-star.svg" alt=""></div>
+              <div class="svg-caption">Figma</div>
+              <div><img src="./images/icons/rating-3-star.svg" alt=""></div>
             </div>
           </div>
         </div>
@@ -254,7 +270,6 @@
             <div class="item--wrap">
               <p class="item__place">Museum of Yakub Kolas</p>
               <p class="item__posision">Scientific staff</p>
-              <p class="item__description"></p>
             </div>
           </div>
         </div>
@@ -264,15 +279,15 @@
     <section class="projects">
       <article class="container">
         <h2 class="heading">Projects</h2>
-        <div class="flex-container">
+        <div class="row">
           <div class="projects__img-wrap">
-            <img src="./images/screenshot.jpg" alt="" class="image">
+            <img src="./images/screenshot.jpg" alt="">
           </div>
           <div class="project__item">
             <h3>Triphouse</h3>
             <p class="projects__text">Landing-page for online travel agency for lodging reservations.</p>
             <div>
-              <a href="#"><button class="button">Contact me</button></a
+              <a href="#"><button class="button">See on GitHub</button></a
                   >
             </div>
           </div>
@@ -352,6 +367,6 @@
       </article>
     </section>
 
-    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
