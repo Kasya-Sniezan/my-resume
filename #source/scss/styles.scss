@@ -1,0 +1,104 @@
+@import "null-style.scss";
+
+$accent-blue: #3a4576;
+$general-white: #ffffff;
+$secondary-white: #fafafa;
+$main-black:#120d0e;
+$secondary-black: #3d3b3c;
+$grey: #bebebe;
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  color: $main-black;
+
+  &._lock {
+    overflow: hidden;
+  }
+}
+
+.svg-sprite {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 72px 16px;
+}
+
+.button {
+  width: 185px;
+  height: 56px;
+  background: $accent-blue;
+  font-size: 24px;
+  font-weight: 500;
+  color: $general-white;
+
+  .button:first-child {
+    margin-right: 24px;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 66px;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+
+.item {
+  display: flex;
+  border-left: 1px solid $secondary-black;
+  padding: 56px 0px 56px 23px;
+
+  .item__date {
+    color: $grey;
+    margin: 0px 48px 0px 0px;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: $accent-blue;
+    }
+  }
+
+  .item__place {
+    font-weight: 600;
+    margin: 0px 0px 4px 0px;
+  }
+
+  .item__posision {
+    font-weight: 600;
+    margin: 0px 0px 8px 0px;
+  }
+
+  .item__description {
+    color: $grey;
+  }
+}
+
+@import "header.scss";
+@import "main.scss";
+@import "skills.scss";
+@import "projects.scss";
+@import "lang-block.scss";
+@import "contacts.scss";

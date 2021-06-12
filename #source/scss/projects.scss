@@ -1,0 +1,17 @@
+.projects {
+  background: $secondary-white;
+
+  .projects__img-wrap {
+    width: 50%;
+    margin: 0px 16px 0px 0px;
+  }
+
+  .project__item {
+    width: 40%;
+
+    .projects__text {
+      margin: 8px 0px 72px 0px;
+      color: $grey;
+    }
+  }
+}

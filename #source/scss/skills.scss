@@ -1,0 +1,159 @@
+.skills-block {
+  background: $secondary-white;
+
+  .row--skills-block {
+    position: relative;
+
+    @media (max-width: 450px) {
+      & {
+        justify-content: center;
+      }
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      width: 16px;
+      height: 4px;
+      background-color: $main-black;
+      position: absolute;
+      top: 100%;
+      right: 50%;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+    }
+
+    &::before {
+      transform: rotate(40deg);
+      left: 49%;
+    }
+
+    &::after {
+      transform: rotate(-40deg);
+      left: 50%;
+    }
+
+    &._active::before {
+      transform: rotate(-40deg);
+    }
+
+    &._active::after {
+      transform: rotate(40deg);
+    }
+
+    .col-icons {
+      width: 166px;
+      margin: 0px 16px 72px 16px;
+
+      .svg--wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 0px 25px 0px;
+
+        & img {
+          width: 120px;
+          height: 100px;
+        }
+
+        .html5 {
+          width: 100px;
+          height: 100px;
+        }
+
+        .css3 {
+          width: 72px;
+          height: 100px;
+        }
+
+        .sass {
+          width: 100px;
+          height: 100px;
+        }
+
+        .git {
+          width: 120px;
+          height: 100px;
+        }
+
+        .javascript {
+          width: 78px;
+          height: 100px;
+        }
+
+        .github {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+
+    .svg-caption {
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      color: $secondary-black;
+      margin: 0px 0px 26px 0px;
+    }
+
+    .spoiler-wrap {
+      display: none;
+
+      &._active {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+      }
+
+      @media (max-width: 450px) {
+        &._active {
+          justify-content: center;
+        }
+      }
+
+      .col-icons {
+        width: 166px;
+        margin: 0px 16px 72px 16px;
+
+        .svg--wrap {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0px 0px 25px 0px;
+
+          .pug {
+            width: 100px;
+            height: 100px;
+          }
+
+          .webpack {
+            width: 96px;
+            height: 100px;
+          }
+
+          .nodejs {
+            width: 100px;
+            height: 100px;
+          }
+
+          .npm {
+            width: 100px;
+            height: 100px;
+          }
+
+          .react {
+            width: 89px;
+            height: 100px;
+          }
+
+          .figma {
+            width: 58px;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+}
