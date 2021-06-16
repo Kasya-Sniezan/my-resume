@@ -1,0 +1,30 @@
+.swiper-button-next {
+  right: 0;
+  left: auto;
+}
+
+.swiper-button-prev {
+  left: 0;
+  right: auto;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: $accent-blue;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.row--slider {
+  padding: 50px 40px 80px 40px;
+}
+
+.swiper-pagination {
+  bottom: 0;
+}
+
+.swiper-pagination-bullet {
+  width: 17px;
+  height: 17px;
+  background: $accent-blue;
+}

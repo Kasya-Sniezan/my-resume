@@ -139,6 +139,7 @@ img {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  min-width: 0;
 }
 
 .heading {
@@ -530,6 +531,37 @@ main .container--main-page .main-page-img-wrap {
 .skills-block .row--skills-block .spoiler-wrap .col-icons .svg--wrap .figma {
   width: 58px;
   height: 100px;
+}
+
+.swiper-button-next {
+  right: 0;
+  left: auto;
+}
+
+.swiper-button-prev {
+  left: 0;
+  right: auto;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #3a4576;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.row--slider {
+  padding: 50px 40px 80px 40px;
+}
+
+.swiper-pagination {
+  bottom: 0;
+}
+
+.swiper-pagination-bullet {
+  width: 17px;
+  height: 17px;
+  background: #3a4576;
 }
 
 .projects {
