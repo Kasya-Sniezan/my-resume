@@ -54,6 +54,7 @@ img {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  min-width: 0;
 }
 
 .heading {
@@ -99,6 +100,7 @@ img {
 @import "header.scss";
 @import "main.scss";
 @import "skills.scss";
+@import "slider.scss";
 @import "projects.scss";
 @import "lang-block.scss";
 @import "contacts.scss";

@@ -2,3 +2,4 @@
 //@prepros-append add-spoiler.js
 //@prepros-append def-system.js
 //@prepros-append go-to-block.js
+//@prepros-append slider.js
