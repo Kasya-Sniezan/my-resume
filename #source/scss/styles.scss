@@ -31,7 +31,18 @@ body {
   padding: 72px 16px;
 }
 
+.button-wrap {
+  display: flex;
+
+  @media (max-width: 415px) {
+    & {
+      display: block;
+    }
+  }
+}
+
 .button {
+  display: block;
   width: 185px;
   height: 56px;
   background: $accent-blue;
@@ -39,8 +50,14 @@ body {
   font-weight: 500;
   color: $general-white;
 
-  .button:first-child {
+  &:first-child {
     margin-right: 24px;
+
+    @media (max-width: 415px) {
+      & {
+        margin-bottom: 15px;
+      }
+    }
   }
 }
 

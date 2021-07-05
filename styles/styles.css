@@ -110,7 +110,19 @@ body._lock {
   padding: 72px 16px;
 }
 
+.button-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 415px) {
+  .button-wrap {
+    display: block;
+  }
+}
+
 .button {
+  display: block;
   width: 185px;
   height: 56px;
   background: #3a4576;
@@ -118,8 +130,13 @@ body._lock {
   font-weight: 500;
   color: #ffffff;
 }
-.button .button:first-child {
+.button:first-child {
   margin-right: 24px;
+}
+@media (max-width: 415px) {
+  .button:first-child {
+    margin-bottom: 15px;
+  }
 }
 
 img {
@@ -410,6 +427,18 @@ main .container--main-page .main-page-img-wrap {
           transform: rotate(-40deg);
   left: 50%;
 }
+@media (max-width: 767px) {
+  .skills-block .row--skills-block::before {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+    left: 48%;
+  }
+  .skills-block .row--skills-block::after {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+    left: 50%;
+  }
+}
 .skills-block .row--skills-block._active::before {
   -webkit-transform: rotate(-40deg);
           transform: rotate(-40deg);
@@ -545,9 +574,8 @@ main .container--main-page .main-page-img-wrap {
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  color: #3a4576;
+  color: #120d0e;
   font-size: 20px;
-  font-weight: 500;
 }
 
 .row--slider {
