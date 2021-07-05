@@ -33,6 +33,18 @@
       left: 50%;
     }
 
+    @media (max-width: 767px) {
+      &::before {
+        transform: rotate(40deg);
+        left: 48%;
+      }
+
+      &::after {
+        transform: rotate(-40deg);
+        left: 50%;
+      }
+    }
+
     &._active::before {
       transform: rotate(-40deg);
     }
