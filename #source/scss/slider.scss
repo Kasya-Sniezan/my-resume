@@ -16,6 +16,10 @@
 
 .row--slider {
   padding: 50px 40px 80px 40px;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 }
 
 .swiper-pagination {

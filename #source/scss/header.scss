@@ -10,6 +10,10 @@ header {
     padding-top: 40px;
     min-height: 40px;
 
+    @media (max-width: 567px) {
+      padding: 40px 16px;
+    }
+
     .menu__icon {
       display: none;
 
@@ -98,9 +102,7 @@ header {
     }
 
     .menu__list {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @extend %flex-spb;
       flex-wrap: wrap;
       padding: 40px 0px 40px 0px;
       border-bottom: 1px solid $secondary-black;

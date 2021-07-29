@@ -5,9 +5,7 @@
     position: relative;
 
     @media (max-width: 450px) {
-      & {
-        justify-content: center;
-      }
+      justify-content: center;
     }
 
     &::before,
@@ -58,9 +56,7 @@
       margin: 0px 16px 72px 16px;
 
       .svg--wrap {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @extend %flex-c;
         margin: 0px 0px 25px 0px;
 
         & img {
@@ -112,9 +108,7 @@
       display: none;
 
       &._active {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @extend %flex-spb;
         flex-wrap: wrap;
 
       }
@@ -130,9 +124,7 @@
         margin: 0px 16px 72px 16px;
 
         .svg--wrap {
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          @extend %flex-c;
           margin: 0px 0px 25px 0px;
 
           .pug {
