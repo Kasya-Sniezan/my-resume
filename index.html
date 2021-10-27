@@ -7,6 +7,8 @@
   <title>Resume</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/styles.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 
 <body>
@@ -498,69 +500,68 @@
     <article class="container">
       <h2 class="heading">Projects</h2>
 
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div data-hash="triphouse" class="swiper-slide">
-            <div class="row row--slider">
-              <div class="projects__img-wrap">
-                <img src="./images/screenshot.jpg" alt="">
-              </div>
-              <div class="project__item">
-                <h3>Triphouse</h3>
-                <p class="projects__text">Landing-page for online travel agency for lodging reservations.</p>
-                <div>
-                  <a href="#"><button class="button">See on GitHub</button></a>
-                </div>
-              </div>
+      <div class="slick-slider">
+        <div class="slide__item">
+          <div class="row row--slider">
+            <div class="projects__img-wrap">
+              <img src="./images/screenshot.jpg" alt="">
             </div>
-          </div>
-          <div data-hash="resume" class="swiper-slide">
-            <div class="row row--slider">
-              <div class="projects__img-wrap">
-                <img src="./images/resume-screenshot.jpg" alt="">
-              </div>
-              <div class="project__item">
-                <h3>Resume</h3>
-                <p class="projects__text">Landing-page for designer Denis Novik.</p>
-                <div>
-                  <a href="https://kasya-sniezan.github.io/landing-page-resume/" target="_blank"><button class="button">See on GitHub</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div data-hash="hungry-people" class="swiper-slide">
-            <div class="row row--slider">
-              <div class="projects__img-wrap">
-                <img src="./images/restaurant-screenshot.jpg" alt="">
-              </div>
-              <div class="project__item">
-                <h3>Hungry people</h3>
-                <p class="projects__text">Landing-page for offline restaurant.</p>
-                <div>
-                  <a href="#"><button class="button">See on GitHub</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div data-hash="bicycle-shop" class="swiper-slide">
-            <div class="row row--slider">
-              <div class="projects__img-wrap">
-                <img src="./images/bicycle-shop.jpg" alt="">
-              </div>
-              <div class="project__item">
-                <h3>AOD New York</h3>
-                <p class="projects__text">Landing-page for online bicycle shop.</p>
-                <div>
-                  <a href="#"><button class="button">See on GitHub</button></a>
-                </div>
+            <div class="project__item">
+              <h3>Triphouse</h3>
+              <p class="projects__text">Landing-page for online travel agency for lodging reservations.</p>
+              <div>
+                <a href="#"><button class="button">See on GitHub</button></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+
+        <div class="slide__item">
+          <div class="row row--slider">
+            <div class="projects__img-wrap">
+              <img src="./images/resume-screenshot.jpg" alt="">
+            </div>
+            <div class="project__item">
+              <h3>Resume</h3>
+              <p class="projects__text">Landing-page for designer Denis Novik.</p>
+              <div>
+                <a href="https://kasya-sniezan.github.io/landing-page-resume/" target="_blank"><button class="button">See on GitHub</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide__item">
+          <div class="row row--slider">
+            <div class="projects__img-wrap">
+              <img src="./images/restaurant-screenshot.jpg" alt="">
+            </div>
+            <div class="project__item">
+              <h3>Hungry people</h3>
+              <p class="projects__text">Landing-page for offline restaurant.</p>
+              <div>
+                <a href="#"><button class="button">See on GitHub</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide__item">
+          <div class="row row--slider">
+            <div class="projects__img-wrap">
+              <img src="./images/bicycle-shop.jpg" alt="">
+            </div>
+            <div class="project__item">
+              <h3>AOD New York</h3>
+              <p class="projects__text">Landing-page for online bicycle shop.</p>
+              <div>
+                <a href="#"><button class="button">See on GitHub</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
     </article>
   </section>
 
@@ -634,7 +635,7 @@
     </article>
   </section>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./#source/js/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

@@ -557,39 +557,52 @@ main .container--main-page .row--main .main-page__info-text:first-of-type {
   height: 100px;
 }
 
-.swiper-button-next {
-  right: 0;
-  left: auto;
+.slick-slider {
+  position: relative;
+  min-width: 0;
 }
 
-.swiper-button-prev {
-  left: 0;
-  right: auto;
+.slick-list {
+  overflow: hidden;
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  color: #120d0e;
-  font-size: 20px;
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.row--slider {
-  padding: 50px 40px 80px 40px;
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-@media (max-width: 768px) {
-  .row--slider {
-    display: block;
-  }
+.slick-dots li {
+  list-style: none;
+  margin: 0 17px;
 }
-
-.swiper-pagination {
-  bottom: 0;
-}
-
-.swiper-pagination-bullet {
+.slick-dots li button {
+  font-size: 0;
   width: 17px;
   height: 17px;
-  background: #3a4576;
+  background-color: transparent;
+  border: 1px solid #3a4576;
+  border-radius: 50%;
+}
+.slick-dots li.slick-active button {
+  background-color: #3a4576;
 }
 
 .projects {
@@ -616,6 +629,10 @@ main .container--main-page .row--main .main-page__info-text:first-of-type {
 .projects .project__item .projects__text {
   margin: 8px 0px 72px 0px;
   color: #bebebe;
+}
+
+.row--slider {
+  margin: 56px;
 }
 
 .lang-block {
